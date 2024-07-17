@@ -1,0 +1,23 @@
+.errorGreen {
+  padding: 1em;
+  background-color: rgb(163, 163, 163);
+  border-radius: 1em;
+  margin-bottom: 1em;
+  border: 3px solid green;
+  color: green;
+  text-transform: lowercase;
+}
+
+.errorRed {
+  padding: 1em;
+  background-color: rgb(163, 163, 163);
+  border-radius: 1em;
+  margin-bottom: 1em;
+  border: 3px solid red;
+  color: red;
+  text-transform: lowercase;
+}
+
+.hidden{
+  display: none;
+}
