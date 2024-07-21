@@ -49,8 +49,8 @@ const TogglableBlogs = ({ title, author, likes, url, blogStyle, handleLikes, but
           {title}
           <button onClick={toggleVisibility}>hide</button><br/>
           {url}<br/>
-          <div data-testid='likes'>
-            <span id='likes'>{likes}</span>
+          <div data-testid='likes' class='likes'>
+                {likes}
             <button onClick={handleLikes}>like</button><br/>
           </div>
           {author}<br/>
