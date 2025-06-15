@@ -15,6 +15,7 @@ describe('Blog app', function(){
     cy.request('POST', 'http://localhost:3001/api/users', user2)
     cy.visit('')
   })
+  
   it('login form is shown', function(){
     cy.contains('Blogs')
     cy.contains('log in to application')

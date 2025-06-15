@@ -8,11 +8,16 @@ const CreateForm = ({ createBlog }) => {
 
   const handleCreate = (event) => {
     event.preventDefault()
-    createBlog({
+    const addBlog = createBlog({
       title: title,
       author: author,
       url: url,
     })
+    if(addBlog) {
+      setTitle('')
+      setAuthor('')
+      setUrl('')
+    }
   }
 
   return (

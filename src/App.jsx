@@ -56,6 +56,7 @@ const App = () => {
         message: `a new blog ${noteObject.title} by ${noteObject.author}`,
         type: "success",
       });
+      return true
     } catch (error) {
       setAlert({ message: error, type: "error" });
     }
