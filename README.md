@@ -1,8 +1,35 @@
-# React + Vite
+# Full Stack Open Part 5 - Testing React Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Project Overview
+This project implements Part 5 of the Full Stack Open course, focusing on testing React applications. It includes frontend testing with Jest, React Testing Library, and end-to-end testing with Cypress.
 
-Currently, two official plugins are available:
+## 🛠️ Technologies Used
+- **React** - Frontend framework
+- **Vite** - Build tool and development server
+- **Jest** - JavaScript testing framework
+- **React Testing Library** - React component testing utilities
+- **Cypress** - End-to-end testing framework
+- **ESLint** - Code linting
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🏗️ Project Structure
+```
+├── src/                 # React source code
+├── cypress/            # E2E tests
+├── public/             # Static assets
+├── tests/              # Unit and integration tests
+├── testSetup.js        # Test configuration
+├── vite.config.js      # Vite configuration
+└── .eslintrc.cjs       # ESLint configuration
+```
+
+## 🔧 Available Scripts
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+- `npm test` - Run unit tests
+- `npm run cypress:open` - Open Cypress test runner
+- `npm run cypress:run` - Run Cypress tests headlessly
+
+---
+*Completed by: Estivenm06*

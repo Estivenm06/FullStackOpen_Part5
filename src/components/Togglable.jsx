@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { useState, forwardRef, useImperativeHandle } from 'react'
 import Proptypes from 'prop-types'
 
@@ -20,7 +21,7 @@ const Togglable = forwardRef((props, ref) => {
   return (
     <div>
       <div style={hideWhenVisible}>
-        <button onClick={toggleVisibility}>{props.buttonLabel}</button>
+        <button onClick={toggleVisibility}>new blog</button>
       </div>
       <div style={shownWhenVisible}>
         {props.children}
@@ -29,10 +30,6 @@ const Togglable = forwardRef((props, ref) => {
     </div>
   )
 })
-
-Togglable.propTypes = {
-  buttonLabel: Proptypes.string.isRequired,
-}
 
 Togglable.displayName = 'Togglable'
 

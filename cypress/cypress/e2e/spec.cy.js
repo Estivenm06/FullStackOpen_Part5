@@ -1,6 +1,6 @@
 describe('Blog app', function(){
   beforeEach(function(){
-    cy.request("POST", 'http://localhost:3001/api/testing/reset')
+    cy.request('POST', 'http://localhost:3001/api/testing/reset')
     const user = {
       username: 'mluukkai',
       name: 'Matti Luukkainen',
@@ -11,16 +11,16 @@ describe('Blog app', function(){
       name: 'Test2',
       password: 'test'
     }
-    cy.request("POST", 'http://localhost:3001/api/users', user)
-    cy.request("POST", 'http://localhost:3001/api/users', user2)
+    cy.request('POST', 'http://localhost:3001/api/users', user)
+    cy.request('POST', 'http://localhost:3001/api/users', user2)
     cy.visit('')
   })
   it('login form is shown', function(){
-    cy.contains("Blogs")
+    cy.contains('Blogs')
     cy.contains('log in to application')
-    cy.contains("login")
+    cy.contains('login')
   })
-  describe("Login", function(){
+  describe('Login', function(){
     it('succeeds with correct credentials', function(){
       cy.get('#username').type('mluukkai')
       cy.get('#password').type('salainen')
@@ -44,8 +44,8 @@ describe('Blog app', function(){
     it('A blog can be created', function(){
       cy.contains('new blog').click()
       cy.get('#title').type('First note')
-      cy.get("#author").type('Test1')
-      cy.get("#url").type('www.test1.com')
+      cy.get('#author').type('Test1')
+      cy.get('#url').type('www.test1.com')
       cy.contains('create').click()
       cy.contains('First note')
     })
@@ -57,8 +57,8 @@ describe('Blog app', function(){
       cy.contains('login').click()
       cy.contains('new blog').click()
       cy.get('#title').type('First note')
-      cy.get("#author").type('Test1')
-      cy.get("#url").type('www.test1.com')
+      cy.get('#author').type('Test1')
+      cy.get('#url').type('www.test1.com')
       cy.contains('create').click()
     })
     it('The blog can be liked', function(){
@@ -90,13 +90,13 @@ describe('Blog app', function(){
       cy.contains('login').click()
       cy.contains('new blog').click()
       cy.get('#title').type('The title with the most likes')
-      cy.get("#author").type('Test1')
-      cy.get("#url").type('www.test1.com')
+      cy.get('#author').type('Test1')
+      cy.get('#url').type('www.test1.com')
       cy.contains('create').click()
       cy.contains('new blog').click()
       cy.get('#title').type('The title with the second most likes')
-      cy.get("#author").type('Test1')
-      cy.get("#url").type('www.test1.com')
+      cy.get('#author').type('Test1')
+      cy.get('#url').type('www.test1.com')
       cy.contains('create').click()
     })
     it.only('blogs are oredered by likes', function(){

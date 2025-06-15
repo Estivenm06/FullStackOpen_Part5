@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { useState } from 'react'
 
 const CreateForm = ({ createBlog }) => {
@@ -12,10 +13,6 @@ const CreateForm = ({ createBlog }) => {
       author: author,
       url: url,
     })
-
-    setTitle('')
-    setAuthor('')
-    setUrl('')
   }
 
   return (
